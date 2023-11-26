@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Booking</title>
+    <link rel="stylesheet" href="slot.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="heading">Slot Booking</div>
+        <form action="#">
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Vehicle Model</span>
+                    <input type="text" placeholder="Model Name">
+                </div>
+                <div class="card-box">
+                    <span class="details">Vehicle year</span>
+                    <input type="text" placeholder="Enter Year">
+                </div>
+                <div class="card-box">
+                    <span class="details">Booking Date</span>
+                    <input type="date">
+            
+                </div>
+                
+                <div class="card-box">
+                    <span class="details">City</span>
+                    <input type="text" placeholder="Enter your location">
+                </div>
+                
+            </div>
+            <div class="circal-form">
+                
+            </div>
+            <div class="button" onclick="message()">
+                <input type="button" id="btn" value="Book Now">
+            </div>
+        </form>
+    </div>
+
+    <script>
+         function message(){
+            window.location.href="popup.html"
+         }
+    </script>
+</body>
+</html>

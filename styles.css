@@ -1,0 +1,156 @@
+.navbar {
+    background-color:#0F2C59;
+    padding: 1% 3%;
+}
+
+.nav-link:hover {
+    background-color: #5F6F94;
+    border-radius: 10px;
+}
+
+.nav-item{
+    margin-right: 50px;
+}
+
+h1 {
+    padding: 4% 0%;
+    font-family: 'Dancing Script';
+    font-size: 43px;
+}
+.main-heading{
+    font-size: 36px;
+}
+h3, h4 {
+    font-family: "Oswald";
+    padding-bottom: 2%;
+}
+
+hr {
+    color: #1A374D;
+    border-width: 4px;
+    
+}
+
+/* Introduction */
+
+#introduction {
+    padding: 3% 7%;
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    color: #fff;
+}
+
+.car-image {
+    width: 120%;
+    position: relative;
+    right: 10%;
+}
+
+/* Speciality */
+
+.speciality {
+    text-align: center;
+}
+
+.icon {
+    width: 3rem;
+}
+
+/* Middle Container */
+
+.col-lg-6 {
+    padding: 2% 2%;
+}
+
+#testimonial {
+    padding: 5% 7%;
+    text-align: center;
+    background-color: #C4DDFF;
+    font-size: 1.5rem;
+}
+
+#testimonial-carousel {
+    padding: 0 7%;
+}
+
+.corousel-image {
+    width: auto;
+    height: 400px;
+    padding-bottom: 3%;
+}
+
+/* About */
+
+#about {
+    padding: 3% 7%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Style */
+
+#style {
+    padding: 3% 5%;
+    background-color: #C4DDFF;
+}
+
+.style-details {
+    padding-top: 10%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.style-image {
+    width: 100%;
+    padding: 0;
+}
+/* Deal */
+
+#deals {
+    padding: 0% 7% 3%;
+    text-align: center;
+    background-color: #EEEEEE;
+    font-size: 1.1rem;
+}
+
+/* Others */
+
+#other {
+    padding: 3% 7%;
+    text-align: center;
+}
+
+.other-heading {
+    font-size: 3rem;
+}
+
+/* Footer */
+
+#footer {
+    padding: 3% 7% 0%;
+    text-align: center;
+    background-color: #EEEEEE;
+}
+
+.footer-details {
+    text-decoration: underline;
+}
+
+.col-lg-4 {
+    padding-bottom: 3% ;
+}
+
+#ending {
+    text-align: center;
+    padding: 1% 0%;
+}
+
+@media(max-width:1028px) {
+    .speciality{
+        text-align: center;
+    }
+
+    .corousel-image {
+        width: 250px;
+        height: 200px;                          
+    }
+}

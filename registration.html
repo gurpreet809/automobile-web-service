@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Registration</div>
+        <form action="#">
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="card-box">
+                    <span class="details">Username</span>
+                    <input type="text" placeholder="Enter your username">
+                </div>
+                <div class="card-box">
+                    <span class="details">Email</span>
+                    <input type="email" id="email-field" placeholder="Enter your email" onclick="validateEmail()">
+            
+                </div>
+                <div class="card-box">
+                    <span class="details">Phone Number</span>
+                    <input type="phone" placeholder="Phone Number">
+                </div>
+                <div class="card-box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+                <div class="card-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+            </div>
+            <div class="circal-form">
+                <span class="circal-title">Gender</span>
+                <div class="category" id="gender">
+                    <input type="radio" name="gender">Male     
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Other
+                </div>
+                <span id="email-error"></span>
+            </div>
+            <div class="button" onclick="func()">
+                <input type="button" id="btn" value="Register">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function func(){
+            alert("Registration Successfull !")
+           window.location.href="slot.html"
+            }
+            var emailField = document.getElementById("email-field")
+            var emailError = document.getElementById("email-error")
+            
+            function validateEmail(){
+                if(!emailField.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+                    emailError.innerHTML = " ❌ Please enter a valid email ";
+                    emailError.style.color = "orange";
+                    return false;
+                }
+                emailError.innerHTML = "";
+                return true;
+            }
+    </script>
+</body>
+</html>
